@@ -1,0 +1,12 @@
+Bu misolda biz java.util.concurrent paketidagi ExecutorService
+ interfeysi va Executors sinfidan foydalanamiz.
+ newFixedThreadPool() usuli belgilangan miqdordagi iplar (bu holda, 5) bilan iplar hovuzini yaratadi.
+
+Keyin ExecutorServicening execute() usulidan foydalanib,
+10 ta vazifani iplar hovuziga yuboramiz. Har bir vazifa Runnable interfeysini amalga oshiradigan
+ WorkerThread sinfining namunasi bilan ifodalanadi.
+
+WorkerThread klassi har bir ip tomonidan bajarilishi kerak bo'lgan
+haqiqiy ishni belgilaydi. Ushbu misolda biz ipni 2 soniya davomida
+uyqu rejimiga qo'yib, ba'zi ishlarni simulyatsiya qilamiz.
+Ushbu bo'limni o'zingizning mantiqingiz bilan almashtirishingiz mumkin.

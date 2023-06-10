@@ -1,0 +1,23 @@
+ThreadPoolExecutor----Bu ExecutorService interfeysining eng keng tarqalgan ilovasi.
+ U asosiy hovuz o'lchami, maksimal hovuz hajmi va ipning bo'sh vaqti kabi parametrlar bilan
+  sozlanishi mumkin bo'lgan qat'iy o'lchamdagi iplar hovuzini taqdim etadi. Shuningdek,
+   u kutilayotgan vazifalarni ushlab turish uchun blokirovka navbatini belgilash imkonini beradi.
+   Ushbu dastur umumiy maqsadli iplarni birlashtirish uchun javob beradi
+
+
+   ForkJoinPool: Ushbu dastur maxsus bo'lish va zabt etish algoritmlari va rekursiv topshiriqlarni
+   bajarish uchun mo'ljallangan. U ish o'g'irlash algoritmidan foydalanadi, bunda bo'sh ish
+    zarralari band bo'lgan iplardan vazifalarni o'g'irlaydi va shu bilan ipdan maksimal
+    darajada foydalanishga imkon beradi. Bu, ayniqsa, rekursiv algoritmlar yoki rekursiv
+    kataloglarni o'tkazish kabi rekursiv vazifalarni parallellashtirish uchun foydalidir.
+
+
+
+        ScheduledThreadPoolExecutor: Ushbu dastur ThreadPoolExecutor dasturini kengaytiradi va
+        vazifalarni kechiktirilgan bajarish yoki takroriy bajarish uchun rejalashtirish
+        imkoniyatlarini taqdim etadi. Bu sizga vazifalarni ma'lum bir kechikishdan keyin
+         yoki belgilangan vaqt oralig'ida bajarish uchun rejalashtirish imkonini beradi.
+          Istalgan kechikish yoki oraliq bilan birga Ishga olinadigan yoki chaqirilishi
+          mumkin bo'lgan vazifalarni belgilashingiz mumkin. Vaqti-vaqti bilan bajariladigan
+           vazifalarni rejalashtirishingiz kerak bo'lgan stsenariylar uchun foydalidir, masalan,
+            cronga o'xshash ishlar yoki vaqtli hodisalarni qayta ishlash.
